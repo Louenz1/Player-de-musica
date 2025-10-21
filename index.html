@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width, initial-scale=1.0">
+	<meta id="viewport" name="viewport" content="width=device-width, user-scalabre=no">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<title>Player de Musica</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <img class="menuimg" src="imgs/menu.png">
+    </label>
+
+    <!-- <div id="luz"></div> -->
+    <nav>        
+        <div class="botao-menu">
+            <button class="botao-background botao-primario">Backgrounds</button>
+            <button type="button" class="botao-background botao-background-menu">
+                <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div class="botao-background-lista">
+                <button class="botao-background botao-secundario" onclick="botaoligardesligarfixo()">Fundos fixos</button>
+                <button class="botao-background botao-secundario">Fundos animados</button>
+            </div>
+        </div>
+    </nav>
+
+    <img class="uzui" src="imgs/uzui.png">
+    <img class="uzui1" src="imgs/uzui1.png">
+    <img class="uzui2" src="imgs/uzui2.png">
+
+    <div id="centralizar">
+        
+            <div class="divbackgroundfixo">
+                <button id="button1" class="button">
+                    <img src="backgrounds/1.jpg" alt="Botão 1">
+                </button>
+                <button id="button2" class="button">
+                    <img src="backgrounds/2.jpg" alt="Botão 2">
+                </button>
+                <button id="button3" class="button">
+                    <img src="backgrounds/3.jpg" alt="Botão 3">
+                </button>
+                <button id="button4" class="button">
+                    <img src="backgrounds/4.jpg" alt="Botão 4">
+                </button>
+                <button id="button5" class="button">
+                    <img src="backgrounds/5.jpg" alt="Botão 5">
+                </button>
+                <button id="button6" class="button">
+                    <img src="backgrounds/6.jpg" alt="Botão 6">
+                </button>
+                <button id="button7" class="button">
+                    <img src="backgrounds/7.jpg" alt="Botão 7">
+                </button>
+            </div>
+
+    <div id="centalizaranimado">
+
+            <div class="botao-menu-animado">
+                <button class="botao-fundo-animado button" onclick="alterarFundo('backgrounds/animados/1.mp4')">
+                    <img src="backgrounds/animados/1animado.png" alt="Botão 1">
+                </button>
+                <button class="botao-fundo-animado button" onclick="alterarFundo('backgrounds/animados/2.mp4')">
+                    <img src="backgrounds/animados/2animado.png" alt="Botão 2">
+                </button>
+                <button class="botao-fundo-animado button" onclick="alterarFundo('backgrounds/animados/3.mp4')">
+                    <img src="backgrounds/animados/3animado.png" alt="Botão 3">
+                </button>
+                <button class="botao-fundo-animado button" onclick="alterarFundo('backgrounds/animados/4.mp4')">
+                    <img src="backgrounds/animados/4animado.png" alt="Botão 4">
+                </button>
+                <button class="botao-fundo-animado button" onclick="alterarFundo('backgrounds/animados/5.mp4')">
+                    <img src="backgrounds/animados/5animado.png" alt="Botão 5">
+                </button>
+                <button class="botao-fundo-animado button" onclick="alterarFundo('backgrounds/animados/6.mp4')">
+                    <img src="backgrounds/animados/6animado.png" alt="Botão 6">
+                </button>
+                <button class="botao-fundo-animado button" onclick="alterarFundo('backgrounds/animados/7.mp4')">
+                    <img src="backgrounds/animados/7animado.png" alt="Botão 7">
+                </button>
+              </div>
+            
+              <video id="fundo-video" autoplay muted loop>
+                <source id="video-source" src="video1.mp4" type="video/mp4">
+              </video>
+
+    </div>
+        
+    
+
+        <div class="relogio">
+            <div class="displayrelogio">00:00:00
+                <h3>Criado por Louenz</h3>
+            </div>
+        </div>
+
+        <div class="playermusica">
+        <img class="imgMusicas" src="Imagens musica/Decode.jpg">
+        <div class="descrição">
+            <h2>Nome da Musica</h2>
+            <i>Aerosmith</i>
+        </div>
+
+        <div class="duração">
+            <div class="barra">
+                <progress value="0" max="1"></progress>
+                <div class="ponto"></div>
+            </div>
+                <div class="tempo">
+                    <p class="inicio">0:00</p>
+                    <p class="fim"></p>
+                </div>
+        </div>
+        <div class="player">
+            <i class="fas fa-step-backward setas anterior"></i>
+            <i class="fas fa-play-circle botao-play"></i>
+            <i class="fas fa-pause-circle botao-pause"></i>
+            <i class="fas fa-step-forward setas proximo"></i>
+        </div>
+        <audio src="Musicas/Aerosmith__Hole In My Soul (Traducida Al Español).mp3"></audio>
+        <script src="script.js"></script>
+
+</body>
+</html>

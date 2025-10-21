@@ -1,0 +1,344 @@
+body {
+	background-image: url("backgrounds/4.jpg");
+	/*background-repeat: repeat-y;*/
+	background-size: cover;
+    z-index: -1;
+}
+
+label{
+    padding: 15px;
+    position:absolute;
+    z-index: 1;
+}
+
+nav {
+    background-color: rgba(16,16,16,.5);
+    width: 200px;
+    height: 98%;
+    left: -200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    transition: all .5s;
+}
+
+
+#menu li{
+    display:inline-block;
+    margin-right:10px;
+}
+
+.menuimg {
+    padding: 0px;
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.uzui {
+    right: 1px;
+    width: 500px;
+    height: 300px;
+    bottom:0px;
+    position:absolute;
+}
+
+.uzui1 {
+    right: 130px;
+    width: 500px;
+    height: 300px;
+    bottom:0px;
+    position:absolute;
+}
+
+.uzui2 {
+    right: 90px;
+    width: 400px;
+    height: 250px;
+    bottom:0px;
+    position:absolute;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(200px);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* CSS DOS BOTÕES DO BACKGROUND */
+
+#centralizar {
+    display:block;
+}
+
+.botao-background {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+    cursor: pointer;
+    color: black;
+    transition: all 1s linear;
+}
+
+.botao-background:hover {
+    border-radius: 2px;
+    color: rgb(255, 3, 3);
+}
+
+.botao-primario {
+    font-size: 20px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.botao-secundario {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.botao-background-lista {
+    position: absolute;
+    top: 115%;
+    right: 0;
+    padding: 5px 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.botao-background-lista-visivel {
+    display: initial;
+}
+
+.botao-menu {
+    top:10%;
+    left: 5%;
+    position: relative;
+    background-color: transparent;
+    display: inline-flex;
+    cursor: pointer;
+    
+}
+
+.button {
+    background-color: transparent;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.button img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-top: 8%;
+    border-radius: 50%;
+}
+
+.divbackgroundfixo {
+    left:90%;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    display: none;
+}
+
+.botao-menu-animado {
+    position: fixed;
+    left: 85%;
+    cursor:pointer;
+    display: block;
+
+  }
+  
+  .botao-fundo-animado {
+    border: none;
+    margin-right: auto;
+    margin-left:auto;
+    cursor: pointer;
+    margin: 13.7px;
+  }
+  
+  #fundo-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-size: cover;
+  }
+
+
+
+/*.titulobackground {
+    text-align: start; 
+    color: #000000;
+    font-size: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+
+/* CSS DE TODO RELÓGIO */
+
+.relogio {
+    width: 150px;
+    left: 19%;
+    margin-top: 30px;
+    margin-left: auto; 
+    margin-right: auto; 
+    position: fixed;
+}
+
+.displayrelogio {
+    background-color: #2C2E43;
+    width: 100%;
+    max-width: 180px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 2rem;
+    border: 4px solid #FFD523
+}
+
+h3 {
+    font-size: 18px;
+    margin-top:10px;
+    color:#ff0000;
+}
+
+/* CSS DE TODO PLAYER DE MUSICA */
+
+.playermusica {
+    padding-top: 80px;
+    left: 15%;
+    margin-left: auto; 
+    margin-right: auto; 
+    flex-direction: column;
+    width: 300px;
+    color: #ddd;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+
+.imgMusicas {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #333;
+}
+
+.descrição {
+    max-width: 300px;
+    width:300%;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.duração {
+    max-width: 300px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.barra {
+    max-width: 300px;
+    width: 100%;
+    height: 6px;
+    border: 1px, solid rgb(255, 0, 0);
+    background-color: rgb(73, 0, 73);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    height: 6px;
+    width: 0;
+    background-color: #333;
+}
+
+.ponto {
+    max-width: 20px;
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.tempo {
+    display:flex;
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-between;   
+}
+
+.player {
+    max-width: 300px;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.botao-play, .botao-pause {
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+.setas {
+    font-size:40px;
+    cursor: pointer;
+}
+
+.botao-pause {
+    display:none;
+    cursor: pointer;
+}
+
+.relogio, .playermusica {
+    display: flex;
+  }
+
+/*
+ANIMAÇÃO DE LUZ
+
+#luz {
+    left:870px;
+    top:17px;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    position:absolute;
+    animation-name:luz;
+    animation-duration:5s;
+    border-radius:50px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes luz {
+    0% {background-color:red;top:14px;left:868px;}
+    25% {background-color:yellow;top:14px;left:1063px;}
+    50% {background-color:blue;top:99px;left:1063px;}
+    75% {background-color:green;top:99px;left:868px;}
+    100% {background-color:red;top:14px;left:868px;}
+}*/
+
